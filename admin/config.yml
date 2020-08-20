@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: bryankek/bk-base # replace this with your repo info
+  repo: bryankek/bk-index # replace this with your repo info
   base_url: https://bk-persona-oauth.glitch.me # change this to your OAuth server
   
 site_url: https://bryankek.xyz
