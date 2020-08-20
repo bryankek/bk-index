@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: bryankek/bk-base # replace this with your repo info
-  base_url: https://https://bk-persona-oauth.glitch.me # change this to your OAuth server
+  base_url: https://bk-persona-oauth.glitch.me # change this to your OAuth server
 publish_mode: editorial_workflow
 media_folder: "static/img"
 public_folder: "/img"
