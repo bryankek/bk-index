@@ -1,4 +1,4 @@
-backend: github
+backend: git-gateway
 name: bryankek/bk-base
 
 media_folder: media_folder
