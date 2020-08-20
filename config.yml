@@ -1,5 +1,6 @@
-backend: git-gateway
-name: bryankek/bk-base
+backend:
+  name: github
+  repo: bryankek/bk-base # replace this with your repo info
 
 media_folder: media_folder
 
