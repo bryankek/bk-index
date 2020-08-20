@@ -1,10 +1,10 @@
 backend:
   name: github
   repo: bryankek/bk-base # replace this with your repo info
-publish_mode: editorial_workflow
 media_folder: "static/img"
 public_folder: "/img"
-site_url: https://bryankek.xyz
+  base_url: https://bk-persona-oauth.glitch.me/ # change this to your OAuth server
+
 
 collections:
   - name: "blog"
