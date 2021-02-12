@@ -15,7 +15,6 @@
         }
     </style>
 <script type="text/javascript">
-
 var gsurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ0pGUkVbBDJXPjUQW9zlepN3umSTRnzlsYmPwqCSYbqmBxV8MUbLIWlLLHaMa1MOKOxBAw5qCYIN/pub?gid=539939747&single=true&output=csv";
 var resdata = null ;
 
@@ -30,7 +29,7 @@ function CreateTableFromJSON(res) {
                     col.push(key);
                 }
             }
-        }
+        };
 
         // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
@@ -43,7 +42,7 @@ function CreateTableFromJSON(res) {
             var th = document.createElement("th");      // TABLE HEADER.
             th.innerHTML = col[i];
             tr.appendChild(th);
-        }
+        };
 
         // ADD JSON DATA TO THE TABLE AS ROWS.
         for (var i = 0; i < myBooks.length; i++) {
@@ -54,7 +53,7 @@ function CreateTableFromJSON(res) {
                 var tabCell = tr.insertCell(-1);
                 tabCell.innerHTML = myBooks[i][col[j]];
             }
-        }
+        };
 
         // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
         var divContainer = document.getElementById("cont");
@@ -71,7 +70,7 @@ Papa.parse(gsurl, {
 		resdata = stringToJsonObject;
 		CreateTableFromJSON(resdata);
 	}
-})
+});
 	
 
 
