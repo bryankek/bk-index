@@ -21,8 +21,8 @@ Papa.parse(gsurl, {
 	download: true,
 	complete: function(results) {
 		console.log(results);
-    		var arrayToString = JSON.stringify(Object.assign({}, results.data));  // convert array to string
-    		var stringToJsonObject = JSON.parse(arrayToString);  // convert string to json object
+    		var arrayToString = JSON.stringify(Object.assign({}, results.data));
+    		var stringToJsonObject = JSON.parse(arrayToString);
 		resdata = stringToJsonObject;
 	}
 });
