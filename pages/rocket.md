@@ -1,6 +1,6 @@
 ---
 layout: Rocket Fuel
-title: Welcome
+title: Rocket Fuel
 meta_description: ""
 permalink: /
 section: home
