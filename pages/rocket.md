@@ -6,3 +6,13 @@ permalink: /rocket
 section: rocket
 intro_paragraph: Sample landing page
 ---
+# Markdown part
+<script>
+var gsurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ0pGUkVbBDJXPjUQW9zlepN3umSTRnzlsYmPwqCSYbqmBxV8MUbLIWlLLHaMa1MOKOxBAw5qCYIN/pub?gid=539939747&single=true&output=csv"
+var gs = Papa.parse(gsurl , {
+	download: true,
+	// rest of config ...
+});
+  
+console.log(gs);
+</script>
