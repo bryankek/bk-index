@@ -1,5 +1,5 @@
 ---
-layout: rocket
+layout: page
 title: Rocket Fuel
 meta_description: ""
 permalink: /
