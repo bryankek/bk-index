@@ -37,7 +37,6 @@ var bStat = stat;
 var mStat = stat;
 
 function CreateTableFromJSON(bs,ms) {
-        var myBooks = res;
         var col = ["#","bStat","mStat"];
         var table = document.createElement("table");
         var tr = table.insertRow(-1);           
@@ -90,6 +89,7 @@ function CreateTableFromJSON(bs,ms) {
 		mStat.btc_profit =  resdata[11][2];
 		mStat.portfolio_myr =  resdata[12][2];
 		mStat.curr_capital =  resdata[13][2];	
+		CreateTableFromJSON(bStat,mStat);
 	}
 });
 
