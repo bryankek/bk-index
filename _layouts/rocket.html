@@ -4,10 +4,7 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-{% include page-intro.html %}
-
-
-    <script type="text/javascript">
+<script type="text/javascript">
       // Client ID and API key from the Developer Console
       var CLIENT_ID = '<YOUR_CLIENT_ID>';
       var API_KEY = '<YOUR_API_KEY>';
@@ -124,5 +121,10 @@ layout: default
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
+
+{% include page-intro.html %}
+
+
+    
 
 {{ content }}
