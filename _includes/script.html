@@ -17,6 +17,25 @@
 <script>
 var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ0pGUkVbBDJXPjUQW9zlepN3umSTRnzlsYmPwqCSYbqmBxV8MUbLIWlLLHaMa1MOKOxBAw5qCYIN/pub?gid=136460966&single=true&output=csv";
 var resdata = null;
+var stat = {
+	myr_deposit:"",
+	myr_withdrawn:"",
+	myr_profit:"",
+	myr_bal:"",
+	eth_bal:"",
+	btc_bal:"",
+	avg_eth:"",
+	avg_btc:"",
+	curr_eth:"",
+	curr_btc:"",
+	eth_profit:"",
+	btc_profit:"",
+	portfolio_myr:"",
+	curr_capital:""	
+}
+var bStat = stat;
+var mStat = stat;
+
 function CreateTableFromJSON(res) {
         var myBooks = res;
         var col = [];
@@ -62,7 +81,34 @@ function CreateTableFromJSON(res) {
     		var arrayToString = JSON.stringify(Object.assign({}, results.data));
     		var stringToJsonObject = JSON.parse(arrayToString);
 		resdata = stringToJsonObject;	
-		console.log(resdata);
+		bStat.myr_deposit =  resdata[0][1];
+		bStat.myr_withdrawn =  resdata[1][1];
+		bStat.myr_profit =  resdata[2][1];
+		bStat.myr_bal =  resdata[3][1];
+		bStat.eth_bal =  resdata[4][1];
+		bStat.btc_bal =  resdata[5][1];
+		bStat.avg_eth =  resdata[6][1];
+		bStat.avg_btc =  resdata[7][1];
+		bStat.curr_eth =  resdata[8][1];
+		bStat.curr_btc =  resdata[9][1];
+		bStat.eth_profit =  resdata[10][1];
+		bStat.btc_profit =  resdata[11][1];
+		bStat.portfolio_myr =  resdata[12][1];
+		bStat.curr_capital =  resdata[13][1];	
+		mStat.myr_deposit =  resdata[0][2];
+		mStat.myr_withdrawn =  resdata[1][2];
+		mStat.myr_profit =  resdata[2][2];
+		mStat.myr_bal =  resdata[3][2];
+		mStat.eth_bal =  resdata[4][2];
+		mStat.btc_bal =  resdata[5][2];
+		mStat.avg_eth =  resdata[6][2];
+		mStat.avg_btc =  resdata[7][2];
+		mStat.curr_eth =  resdata[8][2];
+		mStat.curr_btc =  resdata[9][2];
+		mStat.eth_profit =  resdata[10][2];
+		mStat.btc_profit =  resdata[11][2];
+		mStat.portfolio_myr =  resdata[12][2];
+		mStat.curr_capital =  resdata[13][2];	
 	}
 });
 
