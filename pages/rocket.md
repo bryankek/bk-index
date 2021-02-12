@@ -1,8 +1,8 @@
 ---
-layout: Rocket Fuel
+layout: rocket
 title: Rocket Fuel
 meta_description: ""
 permalink: /
-section: home
+section: rocket
 intro_paragraph: Sample landing page
 ---
