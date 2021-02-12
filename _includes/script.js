@@ -1,4 +1,4 @@
-var gsurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ0pGUkVbBDJXPjUQW9zlepN3umSTRnzlsYmPwqCSYbqmBxV8MUbLIWlLLHaMa1MOKOxBAw5qCYIN/pub?gid=539939747&single=true&output=csv";
+var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ0pGUkVbBDJXPjUQW9zlepN3umSTRnzlsYmPwqCSYbqmBxV8MUbLIWlLLHaMa1MOKOxBAw5qCYIN/pub?gid=136460966&single=true&output=csv";
 var resdata = null;
 function CreateTableFromJSON(res) {
         var myBooks = res;
@@ -44,7 +44,6 @@ function CreateTableFromJSON(res) {
 		console.log(results);
     		var arrayToString = JSON.stringify(Object.assign({}, results.data));
     		var stringToJsonObject = JSON.parse(arrayToString);
-		resdata = stringToJsonObject;
-		CreateTableFromJSON(resdata);
+		resdata = stringToJsonObject;	
 	}
 });
