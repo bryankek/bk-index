@@ -68,9 +68,9 @@ Papa.parse(gsurl, {
     		var arrayToString = JSON.stringify(Object.assign({}, results.data));  // convert array to string
     		var stringToJsonObject = JSON.parse(arrayToString);  // convert string to json object
 		resdata = stringToJsonObject;
-		CreateTableFromJSON(resdata);
+		CreateTableFromJSON(resdata)
 	}
-});
+})
 	
 
 
