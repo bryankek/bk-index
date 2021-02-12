@@ -2,7 +2,7 @@
 layout: page
 title: Rocket Fuel
 meta_description: ""
-permalink: /
+permalink: /rocket
 section: rocket
 intro_paragraph: Sample landing page
 ---
