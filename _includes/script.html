@@ -58,10 +58,11 @@ function CreateTableFromJSON(res) {
 	Papa.parse(url, {
 	download: true,
 	complete: function(results) {
-		console.log(results);
+		
     		var arrayToString = JSON.stringify(Object.assign({}, results.data));
     		var stringToJsonObject = JSON.parse(arrayToString);
 		resdata = stringToJsonObject;	
+		console.log(resdata);
 	}
 });
 
